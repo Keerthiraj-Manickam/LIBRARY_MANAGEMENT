@@ -28,5 +28,6 @@ The project uses an SQLite database (library.db) located in the instance folder.
 
 **Contributing:**
 Feel free to open issues or submit pull requests. Contributions are highly appreciated!
+![Screenshot (45)](https://github.com/user-attachments/assets/2fd94c9f-713a-41d4-a52f-1011b8922cdd)
 
-![Screenshot one](LIBRARY_MANAGEMENT/screenshot (45).png)
+
