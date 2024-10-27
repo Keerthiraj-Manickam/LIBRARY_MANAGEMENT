@@ -29,4 +29,4 @@ The project uses an SQLite database (library.db) located in the instance folder.
 **Contributing:**
 Feel free to open issues or submit pull requests. Contributions are highly appreciated!
 
-![Screenshot of the project]("C:\Users\rkeer\Downloads\Project1\LIBRARY_MANAGEMENT\Screenshots\Screenshot (45).png")
+![Screenshot one](LIBRARY_MANAGEMENT/screenshot (45).png)
