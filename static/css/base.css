@@ -1,0 +1,86 @@
+/* Basic body styling with a gradient background */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header with semi-transparent background */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800; /* Hover color for links */
+}
+
+/* Main container with padding and rounded corners */
+main {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark, semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for elevated look */
+    margin-bottom: 20px;
+}
+
+/* Table styling for clean, modern look */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* Light background for rows */
+    color: #fff;
+}
+
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly darker for header */
+    color: #ffeb3b; /* Gold color for table headers */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03); /* Alternating row color */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+/* Footer styling with padding and text alignment */
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #bbb;
+    font-size: 0.9em;
+    margin-top: auto;
+}

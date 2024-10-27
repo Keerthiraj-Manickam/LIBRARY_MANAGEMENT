@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Issue a Book</h2>
+<form action="{{ url_for('issue_book') }}" method="post">
+    Book ID: <input type="number" name="book_id" required><br>
+    Member ID: <input type="number" name="member_id" required><br>
+    <button type="submit">Issue Book</button>
+</form>
+
+<h2>Current Transactions</h2>
+<ul>
+    {% for transaction in transactions %}
+    <li>
+        Book: {{ transaction.book.title }} | Member: {{ transaction.member.name }} | 
+        Issued on: {{ transaction.issue_date }} | 
+        {% if transaction.return_date %}
+            Returned on: {{ transaction.return_date }} | Fee: Rs.{{ transaction.fees_charged }}
+        {% else %}
+            <form action="{{ url_for('return_book', id=transaction.id) }}" method="post">
+                <button type="submit">Return Book</button>
+            </form>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
